@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website development task</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div id="sign">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-laptop-code fa-lg" style="color: #ff4500;"></i>
+            </a>
+            <p id="name" class="glitch">COMDER</p>
+        </div>
+        <nav class="navbar">
+            
+            <div class="nbar">
+                <a href="home" class="tag">Home</a>
+            </div>
+            <div class="nbar">
+                <a href="AboutUs" class="tag">About Us</a>
+            </div>
+            <div class="nbar">
+                <a href="Course" class="tag">Courses</a>
+            </div>
+            <div class="nbar">
+                <a href="Reviews" class="tag">Reviews</a>
+            </div>
+            <div class="nbar">
+                <a href="Blogs" class="tag">Blogs</a>
+            </div>
+            <div class="nbar">
+                <a href="Contact" class="tag">Contact Us</a>
+            </div>
+            
+
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menubtn"></div>
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="content">
+            <div id="sec-heading">
+                Learn Today, bring a brighter Tomorrow!!
+            </div>
+            <div id="sec-subheading">
+                Join our highly supportive Professional Learning Program for college students.
+            </div>
+        </div>
+    </section>
+    <section class="about" id="AboutUs">
+        <div class="heading">WHO ARE WE ?</div>
+        <div class="abtcontent">
+            <div class="image">
+                <img src="bg3.jpg" class="image"/>
+            </div>
+            <div class="abtus">
+                <h1 class="h1">What makes us special?</h1>
+                <br>
+                Welcome to COMDER, your one-stop destination for coding and programming! Founded by a team of passionate developers, our mission is to empower individuals with the knowledge and tools they need to thrive in the digital age.
+                <br>
+                At COMDER, we believe that coding is more than just lines of text.Whether you're a seasoned developer looking to expand your skill set or a beginner taking your first steps into the world of programming, we're here to support you every step of the way.
+                <br>
+                Thank you for choosing us as your trusted partner in coding education. Together, let's unlock the limitless potential of technology and build a brighter future, one line of code at a time.
+                <br><br>
+                <button class="abtbtn">Learn More</button>
+             </div>
+            
+        </div>
+    </section>
+    <section class="Courses" id="Course">
+        <div class="heading" class="secheading">COURSES</div>
+        <div class="crscontent">
+            <div class="crs">
+                How would you like to access the most effective course on C language?
+            </div>
+            <br>
+            <button onclick="viewAssignments('day')" class="abtbtn" class="dayw" id="dayw">View Daywise</button>
+            <button onclick="viewAssignments('week')" class="abtbtn">View Weekwise</button>
+            <div id="coursesContainer" class="hidden">
+                <!-- courses will be produced dynamically -->
+            </div>
+        </div>
+    </section>
+    <section class="Reviews" id="Reviews">
+        <div class="heading" class="revheading">REVIEWS</div>
+        <div class="revcontent">
+            <div class="box" id="revbox">
+                <p class="actreview">"Discovering this coding website has been a game-changer for me! The quality of tutorials and resources is exceptional. I've been able to enhance my coding skills significantly, and the supportive community is a big plus. Highly recommend for anyone looking to level up their coding game!"</p>
+                <img src="person-1.jpg" class="user" alt="">
+                <h3 class="revname" >Rose Jenny</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="box" id="revbox">
+                <p class="actreview">"I can't thank this coding website enough! The courses are well-structured, the instructors are knowledgeable, and the platform is incredibly user-friendly. I've learned more in a few weeks here than I have in months elsewhere. Plus, the interactive exercises make learning fun and engaging."</p>
+                <img src="person-2.jpg" class="user" alt="">
+                <h3 class="revname">Edward Johnny</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div> 
+            <div class="box" id="revbox">
+                <p class="actreview">"Absolutely thrilled with my experience on this coding website! The lessons are comprehensive, and the hands-on projects are a fantastic way to apply what I've learned. It's boosted my confidence and opened up new career opportunities. Couldn't recommend it enough!"</p>
+                <img src="person-3.jpg" class="user" alt="">
+                <h3 class="revname">David Desouza</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Blogs" id="Blogs">
+        <div class="heading" class="blogheading">Blogs</div>
+        <div class="blogcontent">
+            <div class="box" id="revbox">
+                <img src="blog1.webp" class="blogimg" alt="">
+                <p class="actreview" > Embark on a journey to explore the fundamentals of the C programming language. C is a powerful and widely used programming language known for its efficiency, portability, and versatility. Stay tuned as we dive deeper into the world of C programming, exploring topics such as pointers, memory management, file handling, and more. Let's embark on this exciting journey together and unleash the full potential of C programming! <a class="blogmore" href="#">Read more</a></p>
+            </div>
+            <div class="box" id="revbox">
+                <img src="blog2ff.png" class="blogimg" alt="">
+                <p class="actreview" >Whether you're a beginner learning the ropes or an experienced programmer looking to refresh your skills, mastering variables and data types is a fundamental step on your journey to becoming a proficient C programmer. So, let's roll up our sleeves and dive into the fascinating world of variables and data types in C! <a class="blogmore" href="#">Read more</a></p>
+            </div> 
+            <div class="box" id="revbox">
+                <img src="blog3.jpg" class="blogimg" alt="">
+                <p class="actreview" >Discuss the advantages of modular programming and how functions enable code reuse, readability, and maintainability in C programs. Through hands-on examples and practical exercises, you'll learn how to design and implement functions to solve a variety of programming problems. <a class="blogmore" href="#">Read more</a></p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="Contactus" id="Contact">
+        <div class="heading" class="conheading">CONTACT US</div>
+        <div class="concontent">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116935.6154702749!2d86.03672063954873!3d23.667445914277888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4230341010871%3A0xf89f21d9001d5036!2sBokaro%20Steel%20City%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1715779187616!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            <form action="" class="form">
+                <h3 class="conhead">Get in touch with us!</h3>
+                <div class="inputbox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="Your Name">
+                </div>
+                <div class="inputbox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="inputbox">
+                    <span class="fas fa-phone"></span>
+                    <input type="text" placeholder="Phone Number">
+                </div>
+                <button class="abtbtn">Connect Now</button>
+            </form>
+        </div>
+    </section>
+    
+    <section class="footer">
+        <div class="list">
+            <ul class="ftlist">
+                <li><a href="#">COMDER Business</a></li>
+                <li><a href="#">Teach on COMDER</a></li>
+                <li><a href="#">Get the app</a></li>
+            </ul>
+            <ul class="ftlist">
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Help and support</a></li>
+                <li><a href="#">Affiliate</a></li>
+            </ul>
+            <ul class="ftlist">
+                <li><a href="#">Investors</a></li>
+                <li><a href="#">Terms and conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="share">
+            <a href="#facebook" class="fab fa-facebook"></a>
+            <a href="#instagram" class="fab fa-instagram"></a>
+            <a href="#linkedin" class="fab fa-linkedin"></a>
+            <a href="#twitter" class="fab fa-twitter"></a>
+            <a href="#pinterest" class="fab fa-pinterest"></a>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
